@@ -1,0 +1,19 @@
+{
+  "name": "hot-one",
+  "version": "1.0.0",
+  "description": "Utility functions for detecting hot ones, and distance from the midday sun.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && ava",
+    "clean": "rimraf dist/",
+    "prepublish": "npm run clean && npm test && npm run build"
+  },
+  "author": "maxmechanic",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "rimraf": "^2.6.1",
+    "typescript": "^2.4.1"
+  }
+}
