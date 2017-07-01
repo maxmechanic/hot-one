@@ -1,7 +1,10 @@
+import justLikeTheOceanUnderTheMoon from './ocean';
+export {justLikeTheOceanUnderTheMoon};
+
 const HOTTEST_TEMP = 106.0;
 const inchPerTemp = 7 / HOTTEST_TEMP;
 
-export type TemperatureScale = 
+export type TemperatureScale =
   | 'F'
   | 'C'
   | 'K'
@@ -25,7 +28,7 @@ function convertToF(temperature: number, fromScale: TemperatureScale): number {
       return cToF(temperature);
     case 'K':
       return kToF(temperature);
-    default: 
+    default:
       throw new Error('Not a valid temperature scale.');
   }
 }
