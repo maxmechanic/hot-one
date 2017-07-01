@@ -1,6 +1,3 @@
-import justLikeTheOceanUnderTheMoon from './ocean';
-export {justLikeTheOceanUnderTheMoon};
-
 const HOTTEST_TEMP = 106.0;
 const inchPerTemp = 7 / HOTTEST_TEMP;
 
@@ -39,4 +36,11 @@ function kToF(temp: number): number {
 
 function cToF(temp: number): number {
   return (temp * 1.8) + 32;
+}
+
+import {justLikeTheOcean} from './ocean';
+import {underTheMoon} from './moon';
+
+export function justLikeTheOceanUnderTheMoon(lat: number, long: number): boolean {
+  return justLikeTheOcean(lat, long) && underTheMoon(lat, long);
 }

@@ -1,5 +1,5 @@
 import test from 'ava';
-import {justLikeTheOcean, underTheMoon, justLikeTheOceanUnderTheMoon} from '../dist/ocean';
+import {justLikeTheOcean} from '../dist/ocean';
 
 test('the atlantic ocean is just like the ocean', t => {
   t.true(justLikeTheOcean(41, -41));

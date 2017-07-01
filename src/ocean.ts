@@ -11,9 +11,3 @@ export function justLikeTheOcean(lat: number, long: number): boolean {
   const oceanPolygons: Polygon[] = data.features.map((feature) => feature.geometry);
   return oceanPolygons.some((polygon) => turf.inside([lat, long], polygon));
 }
-
-export function underTheMoon(lat: number, long: number): void {
-}
-
-export default function justLikeTheOceanUnderTheMoon(lat: number, long: number): void {
-}
